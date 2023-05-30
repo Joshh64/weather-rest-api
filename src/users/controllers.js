@@ -22,7 +22,7 @@ async function loginUser(req, res) {
     try {
   
       const user = await User.findOne({ 
-        username: req.body.user, 
+        username: req.body.username, 
         password: req.body.password
     });
   
